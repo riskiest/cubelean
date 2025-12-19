@@ -1,0 +1,16 @@
+name = "cubelean"
+version = "0.1.0"
+defaultTargets = ["cubelean"]
+
+# --- 添加这部分 ---
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+# -----------------
+
+[[lean_lib]]
+name = "Cubelean"
+
+[[lean_exe]]
+name = "cubelean"
+root = "Main"
