@@ -64,11 +64,13 @@ $$
 
 ### 4.2 核心推导过程
 根据递推公式：
+
 $$
 N(m) = \sum_{a \in \text{supp}(m)} N(m \setminus \{a\})
 $$
 
 由于 $`m \setminus \{a\}`$ 的大小为 $`n`$，应用归纳假设：
+
 $$
 N(m \setminus \{a\}) = \frac{n!}{\prod_{x} (\text{count}(x, m \setminus \{a\}))!}
 $$
